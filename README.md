@@ -20,15 +20,9 @@ Data jsou ukládána do adresáře:
 /srv/backup/
 
 
-##  Ukázkový zálohovací skript
+##  Ukázkový zálohovací příkaz
 
-#!/bin/bash
-
-SOURCE="/mnt/c/Users/Uživatel/Dokumenty/"
-DEST="backup@192.168.0.xxx:/srv/backup/"
-
-rsync -avz --progress --delete $SOURCE $DEST
-
+rsync -avz --progress --delete /mnt/c/Users/Uživatel/Dokument backup@192.168.56.101:/srv/backups 
 
 ## Screenshoty
 
