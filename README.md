@@ -30,20 +30,6 @@ DEST="backup@192.168.0.xxx:/srv/backup/"
 rsync -avz --progress --delete $SOURCE $DEST
 
 
-## Struktura repozitáře
-
-backup-server-rsync/
-│
-├─ README.md
-├─ skript.sh
-├─ dokumentace.pdf
-├─ Plakát.pdf
-└─ Fotky/
-   ├─ server před rsync.png
-   ├─ spuštění příkazu.png
-   └─ server po rsync.png
-
-
 ## Screenshoty
 
 ### 1. /srv/backup/ před zálohováním  
